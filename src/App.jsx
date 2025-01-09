@@ -39,7 +39,7 @@ const Portfolio = () => {
                       className="inline-flex items-center gap-2 px-4 py-2 bg-white text-blue-600 rounded-lg hover:bg-blue-50 transition-colors shadow-md hover:shadow-lg"
                     >
                       <Download className="w-5 h-5" />
-                      Download Resume
+                      Download my resume
                     </a>
                   </div>
                 </div>
