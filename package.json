@@ -1,5 +1,6 @@
 {
   "name": "klaus-portfolio",
+  "homepage": "https://kbarkhausen.github.io/portfolio",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
