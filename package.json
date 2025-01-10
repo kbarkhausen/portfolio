@@ -1,6 +1,5 @@
 {
   "name": "klaus-portfolio",
-  "homepage": "https://www.klausbarkhausen.com",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
