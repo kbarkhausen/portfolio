@@ -24,7 +24,9 @@ const Portfolio = () => {
               <div className="flex-1 text-center md:text-left">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                   <div>
-                    <h1 className="text-4xl font-bold">Klaus Barkhausen</h1>
+                    <NavLink to="/" className="hover:text-blue-200 transition-colors">
+                      <h1 className="text-4xl font-bold">Klaus Barkhausen</h1>
+                    </NavLink>
                     <div className="flex flex-col gap-0 mt-2">
                       <p className="text-xl text-blue-100">Enterprise Software Architect</p>
                       <p className="text-xl text-blue-100">Full Stack Developer</p>
@@ -87,12 +89,22 @@ const Portfolio = () => {
         {/* Modified Navigation Tabs */}
         <div className="bg-white shadow-md sticky top-0 z-10">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <nav className="flex justify-center space-x-8">
-              {['about', 'skills', 'experience', 'book'].map((tab) => (
+            <nav className="flex justify-center space-x-4 sm:space-x-8">
+              <NavLink
+                to="/"
+                className={({ isActive }) => `px-2 sm:px-3 py-4 text-sm font-medium border-b-2 transition-colors ${
+                  isActive
+                    ? 'border-blue-600 text-blue-600'
+                    : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                }`}
+              >
+                About
+              </NavLink>
+              {['skills', 'experience', 'book'].map((tab) => (
                 <NavLink
                   key={tab}
                   to={`/${tab}`}
-                  className={({ isActive }) => `px-3 py-4 text-sm font-medium border-b-2 transition-colors ${
+                  className={({ isActive }) => `px-2 sm:px-3 py-4 text-sm font-medium border-b-2 transition-colors ${
                     isActive
                       ? 'border-blue-600 text-blue-600'
                       : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
@@ -108,11 +120,10 @@ const Portfolio = () => {
         {/* Modified Main Content */}
         <main className="w-full max-w-6xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
           <Routes>
-            <Route path="/about" element={<About />} />
+            <Route path="/" element={<About />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/experience" element={<Experience />} />
             <Route path="/book" element={<Book />} />
-            <Route path="/" element={<Navigate to="/about" replace />} />
           </Routes>
         </main>
 

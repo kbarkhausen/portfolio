@@ -14,13 +14,13 @@ const Book = () => (
                             className="w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
                         />
                         <a
-                            href="https://www.amazon.com/Total-Fitness-Artificial-Intelligence-Cutting-Edge-ebook/dp/B0CM1CV7VZ/"
+                            href="https://www.totalfitness.ai"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors shadow-md hover:shadow-lg"
                         >
                             <BookOpen className="w-5 h-5" />
-                            Get it on Amazon
+                            Learn more about it
                             <ExternalLink className="w-4 h-4 ml-1" />
                         </a>
                     </div>
@@ -45,13 +45,13 @@ const Book = () => (
 
                         <div className="flex-shrink-0 w-full md:w-64 flex flex-col items-center gap-4">
                             <a
-                                href="https://www.amazon.com/Total-Fitness-Artificial-Intelligence-Cutting-Edge-ebook/dp/B0CM1CV7VZ/"
+                                href="https://www.totalfitness.ai"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors shadow-md hover:shadow-lg"
                             >
                                 <BookOpen className="w-5 h-5" />
-                                Get it on Amazon
+                                Learn more about it
                                 <ExternalLink className="w-4 h-4 ml-1" />
                             </a>
                         </div>
