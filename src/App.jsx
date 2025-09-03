@@ -28,9 +28,7 @@ const Portfolio = () => {
                       <h1 className="text-4xl font-bold">Klaus Barkhausen</h1>
                     </NavLink>
                     <div className="flex flex-col gap-0 mt-2">
-                      <p className="text-xl text-blue-100">Enterprise Software Architect</p>
-                      <p className="text-xl text-blue-100">Full Stack Developer</p>
-                      <p className="text-xl text-blue-100">AI Integration Specialist in .NET Solutions</p>
+                      <p className="text-xl text-blue-100">AI Enterprise Software Architect</p>
                     </div>
                     <p className="mt-3 text-blue-200">Miami, Florida</p>
                   </div>

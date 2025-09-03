@@ -8,47 +8,48 @@ const About = () => (
         
         {/* Title */}
         <h3 className="text-2xl font-semibold mb-4 text-gray-800">
-          Transforming Enterprise Software Architecture with Innovation and AI
+          Modernizing Enterprise Software Architecture with AI, Cloud, and Scalable Innovation
         </h3>
 
         {/* Introduction Paragraph */}
         <p className="text-gray-700 text-lg leading-relaxed mb-6">
-          With over 25 years of experience as a .NET Solution Architect, I bring a unique blend of technical mastery and strategic vision to enterprise software development. Throughout my career, I've architected and delivered high-impact solutions for industry leaders including Cartier, Aflac, and McAfee, consistently driving innovation and operational excellence.
+          With 25+ years as a Principal .NET Architect, I specialize in designing cloud-native, enterprise-scale software solutions that blend AI/ML capabilities with deep system modernization. I've delivered business-critical platforms for global leaders like Cartier, Aflac, and McAfee, transforming legacy systems into modern, intelligent platforms — including reducing a 30-day reporting cycle to 1 day for a luxury brand now used worldwide.
         </p>
 
-        {/* Expertise Paragraph */}
+        {/* Technical Expertise */}
         <p className="text-gray-700 text-lg leading-relaxed mb-6">
-          As a seasoned enterprise architect, I specialize in leveraging cutting-edge technologies to solve complex business challenges. My expertise spans the entire Microsoft technology stack, including .NET, Azure, and SQL Server, complemented by deep knowledge in modern frameworks and AI integration. I've pioneered groundbreaking solutions that have transformed business operations, such as reducing reporting cycles from 30 days to just one business day for a global luxury brand, leading to international adoption of the system.
+          I bring technical depth across the Microsoft stack (C#, .NET, SQL Server, Azure), with a growing portfolio of work in AI integration, including:
         </p>
 
-        {/* Value Proposition */}
-        <p className="text-gray-700 text-lg leading-relaxed mb-6">
-          What sets me apart is my ability to bridge the gap between technical excellence and business value. I don't just architect solutions; I revolutionize processes, mentor teams, and drive organizational change. My approach combines strategic thinking with hands-on expertise, whether I'm designing complex rules engines, implementing advanced security mechanisms, or integrating AI capabilities to enhance software quality and automation.
-        </p>
+        {/* AI Integration List */}
+        <ul className="list-disc list-inside text-gray-700 text-lg leading-relaxed ml-4 space-y-2 mb-6">
+          <li>Embedding machine learning models into transactional systems</li>
+          <li>Leveraging Azure AI Services, Semantic Kernel, and vector databases like Pinecone</li>
+          <li>Architecting secure, scalable APIs and RAG pipelines</li>
+          <li>Designing modular systems that support agentic AI workflows and legacy co-existence</li>
+        </ul>
 
         {/* Current Role and Specializations */}
         <div className="mb-6">
           <p className="text-gray-700 text-lg leading-relaxed mb-3">
-            In my current role at Anthology Inc., I've established myself as a technical leader who delivers results. I specialize in:
+            Currently at Anthology Inc., I serve as a technical leader driving:
           </p>
           <ul className="list-disc list-inside text-gray-700 text-lg leading-relaxed ml-4 space-y-2">
-            <li>Architecting scalable, enterprise-level .NET solutions</li>
-            <li>Integrating AI and machine learning capabilities into existing systems</li>
-            <li>Implementing advanced security mechanisms and authentication protocols</li>
-            <li>Leading complex system migrations and modernization initiatives</li>
-            <li>Mentoring development teams and establishing best practices</li>
-            <li>Driving continuous improvement in code quality and development processes</li>
+            <li>AI-enablement of existing enterprise platforms</li>
+            <li>.NET modernization for scalable, secure cloud deployments</li>
+            <li>Continuous improvement in DevOps, CI/CD, and software quality</li>
+            <li>Mentorship and best-practice enforcement across globally distributed teams</li>
           </ul>
         </div>
 
-        {/* Passion and Commitment */}
+        {/* Value Proposition */}
         <p className="text-gray-700 text-lg leading-relaxed mb-6">
-          I'm passionate about leveraging emerging technologies, particularly artificial intelligence, to create future-ready solutions that drive business success. Whether working as a team leader, solution architect, or independent consultant, I bring a proven track record of transforming technical challenges into business opportunities.
+          I thrive at the intersection of strategy and execution — architecting for scalability, innovating with AI, and aligning software platforms with business growth. Whether as a hands-on architect, strategic consultant, or AI integration lead, I bring clarity, innovation, and measurable results to every project.
         </p>
 
         {/* Closing Statement */}
         <p className="text-gray-700 text-lg leading-relaxed mb-4">
-          My commitment to excellence, combined with bilingual capabilities in English and Spanish, makes me a valuable asset for organizations looking to innovate and scale their technical capabilities. I thrive on challenges that require both technical depth and strategic thinking, consistently delivering solutions that exceed expectations and drive measurable business value.
+          Fluent in English and Spanish, I'm passionate about empowering organizations to adopt AI responsibly and at scale — transforming not just their technology, but their trajectory.
         </p>
 
         {/* Call to Action */}
