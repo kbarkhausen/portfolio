@@ -85,37 +85,6 @@ const Experience = () => (
         }
       />
       <ExperienceCard 
-        index={1}
-        isLast={false}
-        title="Solution Architect & Developer (Consultant)"
-        company="Five Stars Technology, LLC"
-        period="Mar 2006 - Present"
-        location="Miami, Florida"
-        description={
-          <>
-            <div className="mb-6 p-4 rounded-lg bg-gradient-to-r from-blue-900/30 via-cyan-900/30 to-slate-800/30 border border-cyan-500/20">
-              <p className="text-white font-medium">
-                As an independent Solutions Architect and Technical Consultant, I spearheaded enterprise software solutions for well-known companies including <span className="text-cyan-400 font-semibold">Cartier, Ritz Carlton, and McAfee</span>.
-              </p>
-            </div>
-            <ul className="space-y-3">
-              {[
-                "Leveraged AI technologies (Microsoft Azure AI, Amazon AI, OpenAI, Anthropic) to inject smart intelligence into existing business operations, improving processes and enabling new capabilities",
-                "Modernized legacy solutions by adding AI-powered modules to existing business software, transforming workflows and moving systems to cloud architectures that enhance reliability and scalability",
-                "Implemented cloud automation platforms (n8n, CrewAI) to streamline business processes, achieving significant operational efficiency gains",
-                "Architected and delivered mission-critical solutions using Microsoft technologies (C#, ASP.NET MVC, Azure, SQL Server, Service Bus, Azure Functions, Azure Storage, etc.), managing full project lifecycles from conception to deployment",
-                "Built high-performing development teams and established technical standards, enabling new digital revenue channels through strategic system modernization"
-              ].map((item, idx) => (
-                <li key={idx} className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </>
-        }
-      />
-      <ExperienceCard 
         index={2}
         isLast={false}
         title="Sr. Solution Architect & Team Leader"
@@ -136,6 +105,36 @@ const Experience = () => (
               </li>
             ))}
           </ul>
+        }
+      />
+      <ExperienceCard 
+        index={1}
+        isLast={false}
+        title="Solution Architect & Developer (Consultant)"
+        company="Five Stars Technology, LLC"
+        period="Mar 2006 - Apr 2013"
+        location="Miami, Florida"
+        description={
+          <>
+            <div className="mb-6 p-4 rounded-lg bg-gradient-to-r from-blue-900/30 via-cyan-900/30 to-slate-800/30 border border-cyan-500/20">
+              <p className="text-white font-medium">
+                As an independent Solutions Architect and Technical Consultant, I spearheaded enterprise software solutions for well-known companies including <span className="text-cyan-400 font-semibold">Cartier, Ritz Carlton, and McAfee</span>.
+              </p>
+            </div>
+            <ul className="space-y-3">
+              {[
+                "Architected and delivered mission-critical solutions using Microsoft technologies (C#, ASP.NET MVC, Azure, SQL Server, Service Bus, Azure Functions, Azure Storage, etc.), managing full project lifecycles from conception to deployment",
+                "Collaborated directly with C-level executives and senior leadership to translate business objectives into actionable technical solutions, consistently delivering projects on time and within budget while working independently or leading client technical teams",
+                "Ensured seamless solution adoption by establishing robust technical standards and knowledge transfer processes, enabling client teams to effectively maintain and scale systems post-delivery",
+                "Built high-performing development teams and established technical standards, enabling new digital revenue channels through strategic system modernization"
+              ].map((item, idx) => (
+                <li key={idx} className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </>
         }
       />
       <ExperienceCard 
