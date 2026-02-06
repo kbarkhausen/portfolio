@@ -55,9 +55,38 @@ const Experience = () => (
       <ExperienceCard 
         index={0}
         isLast={false}
+        title="Senior Software Architect"
+        company="ELLUCIAN"
+        period="Feb 2026 - Present"
+        location="Remote"
+        description={
+          <>
+            <div className="mb-6 p-4 rounded-lg bg-gradient-to-r from-blue-900/30 via-cyan-900/30 to-slate-800/30 border border-cyan-500/20">
+              <p className="text-white font-medium">
+                Senior Software Architect with a strong focus on <span className="text-cyan-400 font-semibold">AI-driven development initiatives</span>.
+              </p>
+            </div>
+            <ul className="space-y-3">
+              {[
+                "Architecting complex data extraction solutions that leverage AI tools to generate high-quality, efficient codebases capable of handling sophisticated structural requirements",
+                "Leading intelligent data migration projects using AI to automate script generation, validation, and testing between disparate source systems",
+                "Significantly reducing manual effort while improving accuracy and reliability through AI-powered automation"
+              ].map((item, idx) => (
+                <li key={idx} className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-cyan-400 mt-2 flex-shrink-0"></div>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </>
+        }
+      />
+      <ExperienceCard 
+        index={1}
+        isLast={false}
         title=".NET Architect / Cloud and TDD evangelist"
         company="ANTHOLOGY"
-        period="Apr 2014 - Present"
+        period="Apr 2014 - Jan 2026"
         location="Boca Raton, Florida"
         description={
           <>
@@ -85,7 +114,7 @@ const Experience = () => (
         }
       />
       <ExperienceCard 
-        index={2}
+        index={3}
         isLast={false}
         title="Sr. Solution Architect & Team Leader"
         company="AVISENA"

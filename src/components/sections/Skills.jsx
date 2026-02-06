@@ -27,12 +27,12 @@ const skillsList = [
     ]
   },
   {
-    title: "AI Innovation",
-    description: "Experienced in AI via advanced prompt engineering and Semantic Kernel implementation.",
+    title: "AI Integration",
+    description: "Harnessing AI as a force multiplier—embedding intelligence into systems and workflows.",
     icon: Brain,
     gradient: "from-blue-600 to-cyan-500",
-    detailedDescription: "I've been at the forefront of AI integration in enterprise systems, implementing machine learning models, RAG pipelines, and intelligent automation solutions that transform business processes.",
-    experience: "5+ years of AI/ML implementation experience",
+    detailedDescription: "I help organizations harness AI as a force multiplier—not a bolt-on feature. I've implemented machine learning models, RAG pipelines, and intelligent automation solutions that transform how teams build and deliver software.",
+    experience: "5+ years hands-on AI implementation",
     technologies: [
       "Azure AI Services (OpenAI, Cognitive Services, Semantic Kernel)",
       "AWS AI Services (Bedrock, SageMaker, Data Transformation service)",
@@ -58,7 +58,7 @@ const skillsList = [
     experience: "16+ years of enterprise architecture experience",
     technologies: [
       ".NET Framework & .NET Core",
-      "C#, JavaScript, TypeScript",
+      "C#, Python, JavaScript, TypeScript, Go, Java",
       "Microservices Architecture",
       "Domain-Driven Design (DDD)",
       "Clean Architecture",

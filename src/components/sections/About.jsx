@@ -1,5 +1,5 @@
 import { Card, CardContent } from '../ui/card';
-import { Brain, Cloud, Zap, Target, TrendingUp, Globe } from 'lucide-react';
+import { Brain, Cloud, Zap, Target, TrendingUp, Globe, Lightbulb, RefreshCw, Gauge, Code2 } from 'lucide-react';
 
 const About = () => (
   <section className="transition-opacity duration-300 animate-fade-in">
@@ -13,95 +13,111 @@ const About = () => (
     </div>
     
     <div className="glass-dark rounded-2xl p-8 md:p-12 border border-blue-500/20 shadow-2xl hover:shadow-blue-500/20 transition-all duration-300">
-      {/* Title with Icon */}
-      <div className="mb-8">
-        <h3 className="text-3xl md:text-4xl font-bold mb-4 text-white leading-tight">
-          Modernizing Enterprise Software Architecture with{' '}
-          <span className="text-gradient">AI, Cloud, and Scalable Innovation</span>
-        </h3>
-        <div className="h-1 w-32 bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-600 rounded-full"></div>
-      </div>
-
-      {/* Introduction with Highlight Box */}
-      <div className="mb-8 p-6 rounded-xl bg-gradient-to-r from-blue-900/30 via-cyan-900/30 to-slate-800/30 border border-cyan-500/20">
-        <p className="text-gray-200 text-lg leading-relaxed">
-          With <span className="text-cyan-400 font-semibold">25+ years</span> as a Principal .NET Architect, I specialize in designing cloud-native, enterprise-scale software solutions that blend <span className="text-blue-400 font-semibold">AI/ML capabilities</span> with deep system modernization. I've delivered business-critical platforms for global leaders like <span className="text-cyan-300 font-semibold">Cartier, Aflac, and McAfee</span>, transforming legacy systems into modern, intelligent platforms — including reducing a <span className="text-cyan-400 font-semibold">30-day reporting cycle to 1 day</span> for a luxury brand now used worldwide.
+      {/* Hero Statement */}
+      <div className="mb-10 p-8 rounded-2xl bg-gradient-to-r from-blue-900/40 via-cyan-900/30 to-slate-800/40 border border-cyan-500/30">
+        <p className="text-2xl md:text-3xl font-bold text-white leading-relaxed text-center">
+          I help organizations harness <span className="text-gradient">AI as a force multiplier</span>—not a bolt-on feature—to unlock new capabilities, accelerate delivery, and achieve strategic goals faster.
         </p>
       </div>
 
-      {/* AI Integration Section */}
-      <div className="mb-8">
-        <div className="flex items-center gap-3 mb-4">
+      {/* Core Qualities */}
+      <div className="mb-10">
+        <p className="text-gray-200 text-xl leading-relaxed mb-8">
+          With <span className="text-cyan-400 font-semibold">25+ years</span> architecting enterprise software, I combine deep technical expertise with the adaptability and critical thinking needed to navigate complex, evolving landscapes. I learn fast, think in systems, and stay effective when stakes are high and requirements shift.
+        </p>
+        
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {[
+            { icon: Lightbulb, label: "Critical Thinking", color: "from-yellow-500 to-amber-500" },
+            { icon: RefreshCw, label: "Adaptability", color: "from-green-500 to-emerald-500" },
+            { icon: Gauge, label: "Fast Learner", color: "from-blue-500 to-cyan-500" },
+            { icon: Target, label: "Results-Driven", color: "from-purple-500 to-pink-500" }
+          ].map((quality, idx) => (
+            <div key={idx} className="flex flex-col items-center p-4 glass-dark rounded-xl border border-blue-500/20 hover:border-cyan-500/40 transition-all hover:-translate-y-1">
+              <div className={`p-3 rounded-lg bg-gradient-to-r ${quality.color} mb-3`}>
+                <quality.icon className="w-5 h-5 text-white" />
+              </div>
+              <span className="text-gray-300 font-medium text-sm text-center">{quality.label}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Technical Foundation */}
+      <div className="mb-10">
+        <div className="flex items-center gap-3 mb-6">
+          <Code2 className="w-6 h-6 text-blue-400" />
+          <h4 className="text-2xl font-semibold text-white">Technical Foundation</h4>
+        </div>
+        <p className="text-gray-300 text-lg leading-relaxed mb-6">
+          My core expertise spans mission-critical systems using <span className="text-cyan-400 font-semibold">.NET, Azure, SQL Server</span>, and cloud-native architectures. I've built production systems in:
+        </p>
+        <div className="flex flex-wrap gap-3 mb-6">
+          {['C#', 'Python', 'JavaScript', 'TypeScript', 'Go', 'Java', 'Perl'].map((lang, idx) => (
+            <span key={idx} className="px-4 py-2 glass-dark rounded-lg border border-blue-500/30 text-cyan-300 font-mono text-sm hover:border-cyan-500/50 transition-colors">
+              {lang}
+            </span>
+          ))}
+        </div>
+        <p className="text-gray-400 text-lg">
+          Choosing the right tool for each problem. I mentor teams on best practices, modern engineering principles, and delivering reliable software at scale.
+        </p>
+      </div>
+
+      {/* AI Integration */}
+      <div className="mb-10">
+        <div className="flex items-center gap-3 mb-6">
           <Zap className="w-6 h-6 text-cyan-400" />
-          <h4 className="text-2xl font-semibold text-white">AI & Automation Expertise</h4>
+          <h4 className="text-2xl font-semibold text-white">AI Integration</h4>
         </div>
-        <p className="text-gray-300 text-lg leading-relaxed mb-4">
-          I bring technical depth across the Microsoft stack (C#, .NET, SQL Server, Azure), with a growing portfolio of work in AI integration:
+        <p className="text-gray-300 text-lg leading-relaxed mb-6">
+          I embed AI into both software systems and development workflows:
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {[
-            'Embedding machine learning models into transactional systems',
-            'Leveraging Azure AI Services, Semantic Kernel, and vector databases like Pinecone',
-            'Architecting secure, scalable APIs and RAG pipelines',
-            'Designing modular systems that support agentic AI workflows and legacy co-existence'
+            'Recommendation engines & automation agents',
+            'Semantic search & RAG pipelines',
+            'Smart refactoring & automated testing',
+            'Architectural validation & code generation'
           ].map((item, index) => (
-            <div key={index} className="flex items-start gap-3 p-4 glass-dark rounded-lg border border-blue-500/20 hover:border-cyan-500/40 transition-colors">
-              <div className="w-2 h-2 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div>
+            <div key={index} className="flex items-start gap-3 p-4 glass-dark rounded-lg border border-cyan-500/20 hover:border-cyan-500/40 transition-colors">
+              <div className="w-2 h-2 rounded-full bg-cyan-400 mt-2 flex-shrink-0"></div>
               <p className="text-gray-300">{item}</p>
             </div>
           ))}
         </div>
-      </div>
-
-      {/* Current Role Section */}
-      <div className="mb-8">
-        <div className="flex items-center gap-3 mb-4">
-          <Target className="w-6 h-6 text-blue-400" />
-          <h4 className="text-2xl font-semibold text-white">My role as a technology leader</h4>
-        </div>
-        <p className="text-gray-300 text-lg leading-relaxed mb-4">
-          I serve as a technical leader driving:
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {[
-            'AI-enablement of existing enterprise platforms',
-            '.NET modernization for scalable, secure cloud deployments',
-            'Continuous improvement in DevOps, CI/CD, and software quality',
-            'Mentorship and best-practice enforcement across globally distributed teams'
-          ].map((item, index) => (
-            <div key={index} className="flex items-start gap-3 p-4 glass-dark rounded-lg border border-blue-500/20 hover:border-blue-500/40 transition-colors">
-              <div className="w-2 h-2 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div>
-              <p className="text-gray-300">{item}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Value Proposition */}
-      <div className="mb-8 p-6 rounded-xl bg-gradient-to-r from-slate-800/50 to-slate-900/50 border border-blue-500/20">
-        <div className="flex items-center gap-3 mb-4">
-          <TrendingUp className="w-6 h-6 text-cyan-400" />
-          <h4 className="text-2xl font-semibold text-white">Value Proposition</h4>
-        </div>
-        <p className="text-gray-200 text-lg leading-relaxed">
-          I thrive at the intersection of <span className="text-cyan-400 font-semibold">strategy and execution</span> — architecting for scalability, innovating with AI, and aligning software platforms with business growth. Whether as a hands-on architect, strategic consultant, or AI integration lead, I bring clarity, innovation, and measurable results to every project.
+        <p className="text-gray-400 text-lg mt-4">
+          My goal: help organizations reduce technical debt, increase reliability, and ship faster by making AI a natural part of how they build.
         </p>
       </div>
 
-      {/* Closing Statement */}
-      <div className="flex items-start gap-4 p-6 rounded-xl glass-dark border border-blue-500/20">
-        <Globe className="w-6 h-6 text-cyan-400 flex-shrink-0 mt-1" />
-        <div>
-          <p className="text-gray-200 text-lg leading-relaxed mb-4">
-            Fluent in <span className="text-cyan-400 font-semibold">English and Spanish</span>, I'm passionate about empowering organizations to adopt AI responsibly and at scale — transforming not just their technology, but their trajectory.
-          </p>
-          <p className="text-white text-xl font-bold">
-            Ready to bring transformative technical leadership to any project.
-          </p>
+      {/* Track Record */}
+      <div className="mb-10">
+        <div className="flex items-center gap-3 mb-6">
+          <TrendingUp className="w-6 h-6 text-green-400" />
+          <h4 className="text-2xl font-semibold text-white">Track Record</h4>
+        </div>
+        <p className="text-gray-300 text-lg leading-relaxed mb-6">
+          I've helped organizations like <span className="text-cyan-400 font-semibold">Cartier, Aflac, and McAfee</span> solve complex problems, modernize legacy systems, and build future-ready platforms. Whether reengineering outdated architectures, implementing secure multi-tenant SaaS platforms, or leveraging AI to multiply team output—I bring deep technical insight and a strategic mindset to every engagement.
+        </p>
+      </div>
+
+      {/* Current Focus & Closing */}
+      <div className="p-6 rounded-xl bg-gradient-to-r from-blue-900/30 via-slate-800/30 to-cyan-900/30 border border-blue-500/20">
+        <div className="flex items-start gap-4">
+          <Globe className="w-6 h-6 text-cyan-400 flex-shrink-0 mt-1" />
+          <div>
+            <p className="text-gray-200 text-lg leading-relaxed mb-4">
+              Fluent in <span className="text-cyan-400 font-semibold">English and Spanish</span>. Currently driving AI-powered data extraction and intelligent migration solutions at <span className="text-cyan-400 font-semibold">Ellucian</span>.
+            </p>
+            <p className="text-white text-xl font-bold">
+              Ready to bring transformative technical leadership to your next challenge.
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 );
 
-export default About; 
+export default About;
