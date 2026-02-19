@@ -22,10 +22,17 @@ const About = () => (
         <div className="h-1 w-32 bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-600 rounded-full"></div>
       </div>
 
+      {/* What I Do Now */}
+      <div className="mb-8 p-6 rounded-xl bg-gradient-to-r from-cyan-900/40 via-blue-900/30 to-slate-800/30 border border-cyan-500/30">
+        <p className="text-white text-xl leading-relaxed font-medium">
+          I integrate AI into enterprise systems to improve processes, generate solutions, and revitalize legacy platforms — and I prove it with <span className="text-cyan-400 font-semibold">measurable outcomes</span>.
+        </p>
+      </div>
+
       {/* Introduction with Highlight Box */}
       <div className="mb-8 p-6 rounded-xl bg-gradient-to-r from-blue-900/30 via-cyan-900/30 to-slate-800/30 border border-cyan-500/20">
         <p className="text-gray-200 text-lg leading-relaxed">
-          With <span className="text-cyan-400 font-semibold">25+ years</span> as a Principal .NET Architect, I specialize in designing cloud-native, enterprise-scale software solutions that blend <span className="text-blue-400 font-semibold">AI/ML capabilities</span> with deep system modernization. I've delivered business-critical platforms for global leaders like <span className="text-cyan-300 font-semibold">Cartier, Aflac, and McAfee</span>, transforming legacy systems into modern, intelligent platforms — including reducing a <span className="text-cyan-400 font-semibold">30-day reporting cycle to 1 day</span> for a luxury brand now used worldwide.
+          With <span className="text-cyan-400 font-semibold">25+ years</span> in enterprise software architecture, I now specialize in designing AI-powered, cloud-native solutions that transform how organizations work. I've delivered business-critical platforms for global leaders like <span className="text-cyan-300 font-semibold">Cartier, Aflac, and McAfee</span>, modernizing legacy systems into intelligent platforms — including reducing a <span className="text-cyan-400 font-semibold">30-day reporting cycle to 1 day</span> for a luxury brand now used worldwide.
         </p>
       </div>
 

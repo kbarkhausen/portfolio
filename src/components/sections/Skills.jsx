@@ -4,6 +4,29 @@ import { ArrowLeft, Cloud, Brain, Building2, Settings, Database, Globe, Sparkles
 
 const skillsList = [
   {
+    title: "AI Innovation",
+    description: "Integrating AI into enterprise systems to improve processes, generate solutions, and modernize legacy platforms.",
+    icon: Brain,
+    gradient: "from-blue-600 to-cyan-500",
+    detailedDescription: "I've been at the forefront of AI integration in enterprise systems, implementing machine learning models, RAG pipelines, and intelligent automation solutions that transform business processes and deliver measurable results.",
+    experience: "5+ years of AI/ML implementation experience",
+    technologies: [
+      "Azure AI Services (OpenAI, Cognitive Services, Semantic Kernel)",
+      "AWS AI Services (Bedrock, SageMaker, Data Transformation service)",
+      "LLM Orchestration & Agentic AI Workflows",
+      "Vector Databases (Pinecone, Azure Cognitive Search)",
+      "RAG (Retrieval-Augmented Generation) Pipelines",
+      "Document Intelligence & Data Extraction (invoices, manifests, forms)",
+      "AI-Powered Code Generation",
+      "Prompt Engineering & Natural Language Processing"
+    ],
+    achievements: [
+      "Implemented AI-powered reporting system reducing cycle time by 97%",
+      "Built intelligent document processing with 95% accuracy",
+      "Designed agentic AI workflows for enterprise automation"
+    ]
+  },
+  {
     title: "Cloud Architecture",
     description: "Deep expertise in Microsoft Azure and AWS, specializing in cloud-native solutions and microservices architecture.",
     icon: Cloud,
@@ -24,29 +47,6 @@ const skillsList = [
       "Led cloud migration for 50+ applications",
       "Reduced infrastructure costs by 40%",
       "Implemented zero-downtime deployment strategies"
-    ]
-  },
-  {
-    title: "AI Innovation",
-    description: "Experienced in AI via advanced prompt engineering and Semantic Kernel implementation.",
-    icon: Brain,
-    gradient: "from-blue-600 to-cyan-500",
-    detailedDescription: "I've been at the forefront of AI integration in enterprise systems, implementing machine learning models, RAG pipelines, and intelligent automation solutions that transform business processes.",
-    experience: "5+ years of AI/ML implementation experience",
-    technologies: [
-      "Azure AI Services (OpenAI, Cognitive Services, Semantic Kernel)",
-      "AWS AI Services (Bedrock, SageMaker, Data Transformation service)",
-      "Vector Databases (Pinecone, Azure Cognitive Search)",
-      "RAG (Retrieval-Augmented Generation) Pipelines",
-      "Document Intelligence & Data Extraction (invoices, manifests, forms)",
-      "Prompt Engineering",
-      "AI Ethics & Responsible AI",
-      "Natural Language Processing"
-    ],
-    achievements: [
-      "Implemented AI-powered reporting system reducing cycle time by 97%",
-      "Built intelligent document processing with 95% accuracy",
-      "Designed agentic AI workflows for enterprise automation"
     ]
   },
   {
