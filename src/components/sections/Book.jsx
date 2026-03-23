@@ -20,7 +20,8 @@ const Book = () => (
                         <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-700 rounded-2xl blur-xl opacity-40 group-hover:opacity-60 transition-opacity duration-300"></div>
                         <img
                             src="/images/Book_product-med-res-462x600.png"
-                            alt="Book Cover"
+                            alt="Total Fitness with Artificial Intelligence - Book Cover"
+                            loading="lazy"
                             className="relative w-full rounded-2xl shadow-2xl transform group-hover:scale-105 transition-transform duration-300"
                         />
                     </div>
