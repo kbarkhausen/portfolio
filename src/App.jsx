@@ -61,12 +61,12 @@ const Portfolio = () => {
                     <div className="flex items-center gap-3 justify-center md:justify-start">
                       <Sparkles className="w-6 h-6 text-cyan-400 animate-pulse" />
                       <p className="text-2xl md:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500">
-                        AI Strategist & Solutions Architect
+                        AI Business Transformation Architect
                       </p>
                     </div>
                     <div className="flex items-center gap-2 justify-center md:justify-start text-cyan-300">
                       <Zap className="w-5 h-5" />
-                      <p className="text-lg">Transforming Business Processes with AI & Automation</p>
+                      <p className="text-lg">I design AI systems that reduce costs, improve efficiency, and deliver measurable results</p>
                     </div>
                     <p className="text-gray-300 text-lg">Miami, Florida</p>
                   </div>
