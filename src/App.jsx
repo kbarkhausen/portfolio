@@ -5,6 +5,7 @@ import Tilt from 'react-parallax-tilt';
 import About from './components/sections/About';
 import Skills from './components/sections/Skills';
 import Experience from './components/sections/Experience';
+import Articles from './components/sections/Articles';
 import Book from './components/sections/Book';
 
 const Portfolio = () => {
@@ -155,7 +156,7 @@ const Portfolio = () => {
                   </>
                 )}
               </NavLink>
-              {['skills', 'experience', 'book'].map((tab) => (
+              {['skills', 'experience', 'articles', 'book'].map((tab) => (
                 <NavLink
                   key={tab}
                   to={`/${tab}`}
@@ -185,6 +186,7 @@ const Portfolio = () => {
             <Route path="/" element={<About />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/experience" element={<Experience />} />
+            <Route path="/articles" element={<Articles />} />
             <Route path="/book" element={<Book />} />
           </Routes>
         </main>

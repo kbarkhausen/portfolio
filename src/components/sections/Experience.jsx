@@ -55,25 +55,56 @@ const Experience = () => (
       <ExperienceCard 
         index={0}
         isLast={false}
-        title=".NET Architect / Cloud and TDD evangelist"
-        company="ANTHOLOGY"
-        period="Apr 2014 - Present"
-        location="Boca Raton, Florida"
+        title="AI Solutions Architect & Technical Consultant"
+        company="FIVE STARS TECHNOLOGY, LLC"
+        period="Mar 2006 - Present"
+        location="Miami, Florida"
         description={
           <>
             <div className="mb-6 p-4 rounded-lg bg-gradient-to-r from-blue-900/30 via-cyan-900/30 to-slate-800/30 border border-cyan-500/20">
               <p className="text-white font-medium">
-                Leading multiple AI-driven initiatives to transform development workflows, data operations, and operational monitoring across different technology platforms.
+                Independent consulting practice delivering AI-powered enterprise solutions, software architecture, and digital transformation for organizations including <span className="text-cyan-400 font-semibold">Cartier, Ritz Carlton, McAfee, and Aflac</span>.
               </p>
             </div>
             <ul className="space-y-3">
               {[
-                "Spearheading data transformation projects that leverage AI technologies to analyze complex data patterns, generate intelligent data migration strategies, and automate traditionally manual processes",
-                "Improving velocity by leveraging AI-powered code generation tools and frameworks, significantly accelerating project delivery timelines while maintaining high code quality standards",
-                "Generating automated code tests using AI, enabling comprehensive test coverage with reduced manual effort and improved reliability across the entire software development lifecycle",
-                "Established Test Driven Development (TDD) and loosely coupled architecture standards across development teams, elevating code quality and maintainability",
-                "Led architectural guidance for major C# solution enhancements, driving modernization initiatives that improve scalability and performance",
-                "Transformed development practices through cloud-based solution implementation, enabling scalable infrastructure and modern DevOps workflows"
+                "Design and implement AI solutions including document intelligence, data extraction, and agentic workflows that automate complex business processes",
+                "Architect cloud-native solutions on Azure and AWS, modernizing legacy systems into scalable, intelligent platforms",
+                "Collaborate directly with C-level executives to translate business objectives into actionable technical strategies",
+                "Author of 'The AI-Augmented Architect' — comprehensive guide to AI-assisted software development",
+                "Deliver measurable results: 97% reduction in reporting cycles, 300% performance improvements, 40% cost reductions"
+              ].map((item, idx) => (
+                <li key={idx} className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-cyan-400 mt-2 flex-shrink-0"></div>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </>
+        }
+      />
+      <ExperienceCard 
+        index={1}
+        isLast={false}
+        title="Senior Software Architect"
+        company="ELLUCIAN (formerly Anthology)"
+        period="Apr 2014 - Mar 2026"
+        location="Remote"
+        description={
+          <>
+            <div className="mb-6 p-4 rounded-lg bg-gradient-to-r from-blue-900/30 via-cyan-900/30 to-slate-800/30 border border-cyan-500/20">
+              <p className="text-white font-medium">
+                Led AI-driven initiatives transforming development workflows, data operations, and operational monitoring across enterprise education technology platforms.
+              </p>
+            </div>
+            <ul className="space-y-3">
+              {[
+                "Spearheaded data transformation projects leveraging AI to analyze complex data patterns, generate intelligent migration strategies, and automate manual processes",
+                "Improved velocity using AI-powered code generation tools, accelerating project delivery while maintaining high code quality standards",
+                "Generated automated code tests using AI, enabling comprehensive test coverage with reduced manual effort",
+                "Established Test Driven Development (TDD) and loosely coupled architecture standards across development teams",
+                "Led architectural guidance for major C# solution enhancements, driving modernization initiatives",
+                "Transformed development practices through cloud-based solution implementation and modern DevOps workflows"
               ].map((item, idx) => (
                 <li key={idx} className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-cyan-400 mt-2 flex-shrink-0"></div>
@@ -87,7 +118,7 @@ const Experience = () => (
       <ExperienceCard 
         index={2}
         isLast={false}
-        title="Sr. Solution Architect & Team Leader"
+        title="Senior Solution Architect & Team Leader"
         company="AVISENA"
         period="Apr 2013 - Apr 2014"
         location="Miami, Florida"
@@ -105,36 +136,6 @@ const Experience = () => (
               </li>
             ))}
           </ul>
-        }
-      />
-      <ExperienceCard 
-        index={1}
-        isLast={false}
-        title="Solution Architect & Developer (Consultant)"
-        company="Five Stars Technology, LLC"
-        period="Mar 2006 - Apr 2013"
-        location="Miami, Florida"
-        description={
-          <>
-            <div className="mb-6 p-4 rounded-lg bg-gradient-to-r from-blue-900/30 via-cyan-900/30 to-slate-800/30 border border-cyan-500/20">
-              <p className="text-white font-medium">
-                As an independent Solutions Architect and Technical Consultant, I spearheaded enterprise software solutions for well-known companies including <span className="text-cyan-400 font-semibold">Cartier, Ritz Carlton, and McAfee</span>.
-              </p>
-            </div>
-            <ul className="space-y-3">
-              {[
-                "Architected and delivered mission-critical solutions using Microsoft technologies (C#, ASP.NET MVC, Azure, SQL Server, Service Bus, Azure Functions, Azure Storage, etc.), managing full project lifecycles from conception to deployment",
-                "Collaborated directly with C-level executives and senior leadership to translate business objectives into actionable technical solutions, consistently delivering projects on time and within budget while working independently or leading client technical teams",
-                "Ensured seamless solution adoption by establishing robust technical standards and knowledge transfer processes, enabling client teams to effectively maintain and scale systems post-delivery",
-                "Built high-performing development teams and established technical standards, enabling new digital revenue channels through strategic system modernization"
-              ].map((item, idx) => (
-                <li key={idx} className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </>
         }
       />
       <ExperienceCard 
