@@ -8,6 +8,79 @@ import Experience from './components/sections/Experience';
 import Articles from './components/sections/Articles';
 import Book from './components/sections/Book';
 
+const AwsCertificationIcon = ({ title }) => (
+  <svg viewBox="0 0 64 64" className="h-9 w-9" role="img" aria-label={title}>
+    <title>{title}</title>
+    <text x="32" y="29" textAnchor="middle" fontSize="17" fontWeight="700" fill="#ffffff" fontFamily="Arial, sans-serif">aws</text>
+    <path d="M17 40c8.5 5.8 21 7.8 32.2 2.9" fill="none" stroke="#FF9900" strokeWidth="3.8" strokeLinecap="round" />
+    <path d="M44.8 39.3l5 1.3-2.2 4.6" fill="none" stroke="#FF9900" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
+const AzureCertificationIcon = ({ title }) => (
+  <svg viewBox="0 0 64 64" className="h-9 w-9" role="img" aria-label={title}>
+    <title>{title}</title>
+    <path d="M14 51 30.2 13h10.4L24.4 51Z" fill="#0078D4" />
+    <path d="M31.2 13H50L35.3 51H24.4Z" fill="#50A8F2" />
+    <path d="M30.6 13 24.3 28.2l11 12.9L50 13Z" fill="#83C7FF" opacity="0.9" />
+  </svg>
+);
+
+const GoogleCertificationIcon = ({ title }) => (
+  <svg viewBox="0 0 64 64" className="h-9 w-9" role="img" aria-label={title}>
+    <title>{title}</title>
+    <path d="M17.6 38.4a12.7 12.7 0 0 1 0-12.8l-6.2-4.8a22 22 0 0 0 0 22.4Z" fill="#FBBC05" />
+    <path d="M32 18.7c3.2 0 6.1 1.1 8.4 3.1l5.6-5.6A21.1 21.1 0 0 0 32 11a21.8 21.8 0 0 0-20.6 9.8l6.2 4.8A12.8 12.8 0 0 1 32 18.7Z" fill="#EA4335" />
+    <path d="M32 53a21 21 0 0 0 14.3-5.2l-5.8-5.7A12.9 12.9 0 0 1 17.6 38.4l-6.2 4.8A21.8 21.8 0 0 0 32 53Z" fill="#34A853" />
+    <path d="M53 32c0-1.4-.1-2.8-.4-4.1H32v8.2h11.8a10.8 10.8 0 0 1-3.3 6l5.8 5.7C50.6 43.8 53 38.6 53 32Z" fill="#4285F4" />
+  </svg>
+);
+
+const certifications = [
+  {
+    provider: 'AWS',
+    title: 'AWS Certified AI Practitioner',
+    Icon: AwsCertificationIcon,
+    badgeBorder: 'border-orange-400/20 hover:border-orange-300/50',
+    iconShell: 'border-orange-400/25 bg-slate-950/80',
+    providerColor: 'text-orange-300',
+  },
+  {
+    provider: 'Microsoft Azure',
+    title: 'Microsoft Certified: Azure AI Fundamentals',
+    Icon: AzureCertificationIcon,
+    badgeBorder: 'border-sky-400/20 hover:border-sky-300/50',
+    iconShell: 'border-sky-400/25 bg-slate-950/80',
+    providerColor: 'text-sky-300',
+  },
+  {
+    provider: 'Google',
+    title: 'AI Fundamentals',
+    Icon: GoogleCertificationIcon,
+    badgeBorder: 'border-emerald-400/20 hover:border-emerald-300/50',
+    iconShell: 'border-emerald-400/25 bg-slate-950/80',
+    providerColor: 'text-emerald-300',
+  },
+];
+
+const CertificationBadge = ({ provider, title, Icon, badgeBorder, iconShell, providerColor }) => (
+  <div
+    className={`group glass-dark h-full rounded-2xl border px-4 py-3 transition-all duration-300 hover:-translate-y-0.5 ${badgeBorder}`}
+    title={title}
+    aria-label={`${provider} certification: ${title}`}
+  >
+    <div className="flex items-center gap-3 text-left">
+      <div className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border shadow-lg shadow-cyan-950/20 ${iconShell}`}>
+        <Icon title={title} />
+      </div>
+      <div className="min-w-0">
+        <p className={`text-[11px] font-semibold uppercase tracking-[0.22em] ${providerColor}`}>{provider}</p>
+        <p className="text-sm font-semibold leading-snug text-white sm:text-[15px]">{title}</p>
+      </div>
+    </div>
+  </div>
+);
+
 const Portfolio = () => {
   return (
     <BrowserRouter>
@@ -68,6 +141,19 @@ const Portfolio = () => {
                     <div className="flex items-center gap-2 justify-center md:justify-start text-cyan-300">
                       <Zap className="w-5 h-5" />
                       <p className="text-lg">I design AI systems that reduce costs, improve efficiency, and deliver measurable results</p>
+                    </div>
+                    <div className="grid w-full max-w-3xl grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-3">
+                      {certifications.map((certification) => (
+                        <CertificationBadge
+                          key={certification.provider}
+                          provider={certification.provider}
+                          title={certification.title}
+                          Icon={certification.Icon}
+                          badgeBorder={certification.badgeBorder}
+                          iconShell={certification.iconShell}
+                          providerColor={certification.providerColor}
+                        />
+                      ))}
                     </div>
                     <p className="text-gray-300 text-lg">Miami, Florida</p>
                   </div>
