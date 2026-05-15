@@ -135,12 +135,12 @@ const Portfolio = () => {
                     <div className="flex items-center gap-3 justify-center md:justify-start">
                       <Sparkles className="w-6 h-6 text-cyan-400 animate-pulse" />
                       <p className="text-2xl md:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500">
-                        AI Business Transformation Architect
+                        Engineering Leader | Enterprise Architect | AI-Augmented Delivery
                       </p>
                     </div>
                     <div className="flex items-center gap-2 justify-center md:justify-start text-cyan-300">
                       <Zap className="w-5 h-5" />
-                      <p className="text-lg">I design AI systems that reduce costs, improve efficiency, and deliver measurable results</p>
+                      <p className="text-lg">Hands-on engineering leader shipping production .NET and Azure systems, modernizing platforms, and embedding AI into real business workflows.</p>
                     </div>
                     <div className="grid w-full max-w-3xl grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-3">
                       {certifications.map((certification) => (
@@ -164,7 +164,7 @@ const Portfolio = () => {
                       className="group inline-flex items-center gap-2 px-6 py-3 glass-dark rounded-xl hover:scale-105 transition-all duration-300 neon-glow text-white font-semibold"
                     >
                       <Download className="w-5 h-5 group-hover:animate-bounce" />
-                      Download Resume
+                      Download My Resume
                     </a>
                   </div>
                 </div>
