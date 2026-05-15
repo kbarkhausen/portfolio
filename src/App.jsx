@@ -39,7 +39,7 @@ const GoogleCertificationIcon = ({ title }) => (
 const certifications = [
   {
     provider: 'AWS',
-    title: 'AWS Certified AI Practitioner',
+    title: 'AWS AI Practitioner',
     Icon: AwsCertificationIcon,
     badgeBorder: 'border-orange-400/20 hover:border-orange-300/50',
     iconShell: 'border-orange-400/25 bg-slate-950/80',
@@ -47,7 +47,7 @@ const certifications = [
   },
   {
     provider: 'Microsoft Azure',
-    title: 'Microsoft Certified: Azure AI Fundamentals',
+    title: 'Microsoft Azure AI Fundamentals',
     Icon: AzureCertificationIcon,
     badgeBorder: 'border-sky-400/20 hover:border-sky-300/50',
     iconShell: 'border-sky-400/25 bg-slate-950/80',
@@ -55,7 +55,7 @@ const certifications = [
   },
   {
     provider: 'Google',
-    title: 'AI Fundamentals',
+    title: 'Google AI Essentials',
     Icon: GoogleCertificationIcon,
     badgeBorder: 'border-emerald-400/20 hover:border-emerald-300/50',
     iconShell: 'border-emerald-400/25 bg-slate-950/80',
