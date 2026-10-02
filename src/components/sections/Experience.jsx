@@ -55,15 +55,15 @@ const Experience = () => (
       <ExperienceCard 
         index={0}
         isLast={false}
-        title="AI Solutions Architect & Technical Consultant"
+        title="Founder & Principal Consultant"
         company="FIVE STARS TECHNOLOGY, LLC"
-        period="Mar 2006 - Present"
+        period="Feb 2026 - Present"
         location="Miami, Florida"
         description={
           <>
             <div className="mb-6 p-4 rounded-lg bg-gradient-to-r from-blue-900/30 via-cyan-900/30 to-slate-800/30 border border-cyan-500/20">
               <p className="text-white font-medium">
-                Independent consulting practice delivering AI-powered enterprise solutions, software architecture, and digital transformation for organizations including <span className="text-cyan-400 font-semibold">Cartier, Ritz Carlton, McAfee, and Aflac</span>.
+                Independent consulting practice delivering AI-powered enterprise solutions, software architecture, and digital transformation for organizations.
               </p>
             </div>
             <ul className="space-y-3">
@@ -71,7 +71,6 @@ const Experience = () => (
                 "Design and implement AI solutions including document intelligence, data extraction, and agentic workflows that automate complex business processes",
                 "Architect cloud-native solutions on Azure and AWS, modernizing legacy systems into scalable, intelligent platforms",
                 "Collaborate directly with C-level executives to translate business objectives into actionable technical strategies",
-                "Author of 'The AI-Augmented Architect' — comprehensive guide to AI-assisted software development",
                 "Deliver measurable results: 97% reduction in reporting cycles, 300% performance improvements, 40% cost reductions"
               ].map((item, idx) => (
                 <li key={idx} className="flex items-start gap-3">
@@ -88,7 +87,7 @@ const Experience = () => (
         isLast={false}
         title="Senior Software Architect"
         company="ELLUCIAN (formerly Anthology)"
-        period="Apr 2014 - Mar 2026"
+        period="Apr 2014 - Feb 2026"
         location="Remote"
         description={
           <>
