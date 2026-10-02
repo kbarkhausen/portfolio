@@ -55,7 +55,7 @@ const Experience = () => (
       <ExperienceCard 
         index={0}
         isLast={false}
-        title="Principal Consultant"
+        title="Independent Consultant"
         period="Feb 2026 - Present"
         location="Miami, Florida"
         description={
@@ -116,7 +116,7 @@ const Experience = () => (
       <ExperienceCard 
         index={2}
         isLast={false}
-        title="Senior Solution Architect & Team Leader"
+        title="Senior Solution Architect & Team Lead"
         company="AVISENA"
         period="Apr 2013 - Apr 2014"
         location="Miami, Florida"
