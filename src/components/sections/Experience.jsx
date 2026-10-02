@@ -55,8 +55,7 @@ const Experience = () => (
       <ExperienceCard 
         index={0}
         isLast={false}
-        title="Founder & Principal Consultant"
-        company="FIVE STARS TECHNOLOGY, LLC"
+        title="Principal Consultant"
         period="Feb 2026 - Present"
         location="Miami, Florida"
         description={
